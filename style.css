@@ -22,6 +22,7 @@ html {
   grid-area: main;
   background-color: #d0ff84;
   align-self: stretch;
+  font-family: 'Rammetto One', cursive;
 }
 
 .child-c{
