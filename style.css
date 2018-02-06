@@ -1,0 +1,50 @@
+html {
+  background-color: grey;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+/* flexbox piece */
+.child-a{
+  display: flex;
+  flex-flow: row wrap;
+  grid-area: header;
+  background-color: yellow;
+  justify-content: flex-end;
+}
+
+.child-a > div {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.child-b{
+  grid-area: main;
+  background-color: #d0ff84;
+  align-self: stretch;
+}
+
+.child-c{
+  grid-area: sidebar;
+  background-color: skyblue;
+}
+
+.child-d{
+  grid-area: footer;
+  background-color: pink;
+}
+
+.container{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer"
+}
+
+#alert-button{
+  margin: 20px 20px;
+}
